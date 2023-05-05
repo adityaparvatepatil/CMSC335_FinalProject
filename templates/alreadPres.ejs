@@ -41,7 +41,7 @@
 
     <b>Select a country below:</b>
 
-    <form action = "http://localhost:3000/selected" method="POST" id = "list">
+    <form action = "/selected" method="POST" id = "list">
         <% for (let i = 0; i < options.length; i++) { %>
           <input type="radio" name="option" value="<%= options[i] %>">
           <label><%= options[i] %></label><br>
