@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+<style>
+	
+
+	body {
+		background-color: 	rgb(255, 253, 208);
+	}
+	
+    h1 {
+        margin-left: 13em;
+    }
+	#myForm {
+        margin-left: 15em;
+        font-size: 2em;
+    }
+
+    #list {
+        margin-left: 1em;
+    }
+
+    #b1 {
+        border:solid  black;
+		border-radius: 2em;
+        margin-left: -2em;
+    }
+</style>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Display Country Information</title>
+</head>
+
+<body>
+ 
+
+  <h1><u>Number of countries in the database:</u>  <%= result %></h1> 
+
+  <div id = "myForm">
+
+    <b>Select a country below:</b>
+
+    <form action = "http://localhost:3000/selected" method="POST" id = "list">
+        <% for (let i = 0; i < options.length; i++) { %>
+          <input type="radio" name="option" value="<%= options[i] %>">
+          <label><%= options[i] %></label><br>
+        <% } %>
+        <input type="submit" id = "b1">
+        
+    </form>
+
+
+  </div>
+	
+
+
+
+</body>
+
+</html>

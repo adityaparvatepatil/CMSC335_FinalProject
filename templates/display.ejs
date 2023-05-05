@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<style>
+	
+
+	body {
+		background-color: 	rgb(255, 253, 208);
+	}
+	
+	#name {
+		margin-left: 42em;
+	}
+	#flag {
+		
+		margin-left: 30em;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 50%;
+  		height: 300px;
+		border: 4px solid black;
+	  	margin-left: 30em;	
+	}
+
+	.details {
+		margin-left: 30em;
+	}
+</style>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Display Country Information</title>
+</head>
+
+<body>
+  
+	<div id = "name"> <h1><u><%= commonName %></u></h1></div>
+	<br>
+	<img src= "<%= flag %>" alt="" id = "flag">
+	<br> <br>
+
+<!-- currencies:currencies, capital:capital, population: population,
+                                continents:continents, flag:flag}); -->
+
+	<div class = "details">
+		<b><u>Official Name:</u></b> <%= offName %> <br> <br>
+		<b><u>Currency:</u></b> <%= currencies %> <br> <br>
+		<b><u>Capital:</u></b> <%= capital %> <br> <br>
+		<b><u>Population:</u></b> <%= population %> <br> <br>
+		<b><u>Continent:</u></b> <%= continents %> <br> <br>
+	</div>
+
+
+
+
+</body>
+
+</html>

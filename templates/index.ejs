@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en">
+<style>
+	
+
+	body {
+		background-color: 	rgb(255, 253, 208);
+	}
+	#titleHead {
+		margin-left: 15em;
+	}
+	#backImg {
+		background-image: url(allCountries.jpeg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		max-width: 50%;
+  		height: 300px;
+		border: 4px solid black;
+	  	margin-left: 21em;	
+	}
+
+	.cc1 {
+		margin-left: 20em;
+		font-size: 1.4em;
+	}
+
+	#countryCode {
+		border:solid  black;
+		border-radius: 2em;
+	}
+	.b1 {
+		border:solid  black;
+		border-radius: 2em;
+	}
+</style>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Country Info App</title>
+</head>
+
+<body>
+
+	
+		<h1 id = "titleHead"><u>Country Information Application</u></h1>
+	
+
+		
+		<div id  = "backImg">
+					
+		</div>
+		<br>
+
+		<form action="http://localhost:3000/display" method="POST">
+			<div class= "cc1">
+				<b><u>Enter Country Code:</u></b>  <input type="text" id="countryCode" name = "countryCode"> 
+				<input type="submit" name="b1" class="b1" value = "Submit">
+				<br>
+
+				
+
+			</div>
+			
+		</form>
+		<br>
+
+		<form action="http://localhost:3000/alreadyPresent" method="GET">
+
+			<div class = "cc1">
+				<b><u>Lookup the database instead:</u></b> 
+				<input type="submit" name="b1" class="b1" value = "Access database">
+			</div>
+			
+
+		</form>
+
+		
+
+
+	
+	
+
+	<!-- Form -->
+  
+
+
+</body>
+
+</html>
