@@ -1,4 +1,5 @@
-CMSC 335 Final Project 
+CMSC 335 Final Project
+--------------------------
 
 Team Members: Aditya Parvate Patil (UID: 116189620)
 
